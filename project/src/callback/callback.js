@@ -4,7 +4,7 @@ async function getAccessToken() {
     const code = new URLSearchParams(window.location.search).get('code');
 
     const res = await axios.post(
-        "http://api.despaceapi.hackerspacemsit.in/login/oauth/access_token",
+        "http://despaceapi.hackerspacemsit.in/login/oauth/access_token",
         {
             client_id: 'Ov23liJXs3PPaCWpwZsh',
             client_secret: 'e897822e84059a2aeb2b69b0e874e7c0481e2225',
@@ -19,7 +19,7 @@ async function getAccessToken() {
 // Getting User Data
 async function getUserData(access_token) {
     const userResponse = await axios.get(
-        "http://api.despaceapi.hackerspacemsit.in/user",
+        "http://despaceapi.hackerspacemsit.in/user",
         {
             headers: {
                 'Authorization': `Bearer ${access_token}`
@@ -33,7 +33,7 @@ async function getUserData(access_token) {
 async function getPullRequests(access_token) {
     try {
         const response = await axios.get(
-            "http://api.despaceapi.hackerspacemsit.in/repos/sayansanpui/Hackerspace_Portfolio-Flutter-App/pulls",
+            "http://despaceapi.hackerspacemsit.in/repos/sayansanpui/Hackerspace_Portfolio-Flutter-App/pulls",
             {
                 headers: {
                     'Authorization': `Bearer ${access_token}`
@@ -51,7 +51,7 @@ async function getPullRequests(access_token) {
 async function getIssues(access_token) {
     try {
         const response = await axios.get(
-            "http://api.despaceapi.hackerspacemsit.in/repos/sayansanpui/Hackerspace_Portfolio-Flutter-App/issues",
+            "http://despaceapi.hackerspacemsit.in/repos/sayansanpui/Hackerspace_Portfolio-Flutter-App/issues",
             {
                 headers: {
                     'Authorization': `Bearer ${access_token}`
@@ -69,7 +69,7 @@ async function getIssues(access_token) {
 async function getPullRequests1(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/bidisha-15/Quiz-app-backend/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/bidisha-15/Quiz-app-backend/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -87,7 +87,7 @@ async function getPullRequests1(access_token) {
 async function getIssues1(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/bidisha-15/Quiz-app-backend/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/bidisha-15/Quiz-app-backend/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -105,7 +105,7 @@ async function getIssues1(access_token) {
 async function getPullRequests2(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/Ankit-Koder/cartoonify/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/Ankit-Koder/cartoonify/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -123,7 +123,7 @@ async function getPullRequests2(access_token) {
 async function getIssues2(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/Ankit-Koder/cartoonify/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/Ankit-Koder/cartoonify/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -141,7 +141,7 @@ async function getIssues2(access_token) {
 async function getPullRequests3(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/tikuzaa/Quiz-app-frontend/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/tikuzaa/Quiz-app-frontend/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -159,7 +159,7 @@ async function getPullRequests3(access_token) {
 async function getIssues3(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/tikuzaa/Quiz-app-frontend/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/tikuzaa/Quiz-app-frontend/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -177,7 +177,7 @@ async function getIssues3(access_token) {
 async function getPullRequests4(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/sayandip-ghosh/Blog-Server-Side/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/sayandip-ghosh/Blog-Server-Side/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -195,7 +195,7 @@ async function getPullRequests4(access_token) {
 async function getIssues4(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/sayandip-ghosh/Blog-Server-Side/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/sayandip-ghosh/Blog-Server-Side/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -213,7 +213,7 @@ async function getIssues4(access_token) {
 async function getPullRequests5(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/Sahil-047/notion-clone/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/Sahil-047/notion-clone/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -231,7 +231,7 @@ async function getPullRequests5(access_token) {
 async function getIssues5(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/Sahil-047/notion-clone/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/Sahil-047/notion-clone/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -249,7 +249,7 @@ async function getIssues5(access_token) {
 async function getPullRequests6(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/muskaand26-msit/my-blog-app/pulls",
+          "http://despaceapi.hackerspacemsit.in/repos/muskaand26-msit/my-blog-app/pulls",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
@@ -267,7 +267,7 @@ async function getPullRequests6(access_token) {
 async function getIssues6(access_token) {
   try {
       const response = await axios.get(
-          "http://api.despaceapi.hackerspacemsit.in/repos/muskaand26-msit/my-blog-app/issues",
+          "http://despaceapi.hackerspacemsit.in/repos/muskaand26-msit/my-blog-app/issues",
           {
               headers: {
                   'Authorization': `Bearer ${access_token}`
