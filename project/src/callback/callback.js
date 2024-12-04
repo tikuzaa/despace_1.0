@@ -101,4 +101,184 @@ async function getIssues1(access_token) {
   }
 }
 
-export { getAccessToken, getUserData, getPullRequests, getIssues, getPullRequests1, getIssues1 };
+// Getting PR Data For Ankit
+async function getPullRequests2(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/Ankit-Koder/cartoonify/pulls",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching pull requests:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting Issues Data
+async function getIssues2(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/Ankit-Koder/cartoonify/issues",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching issues:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting PR Data For Debangan
+async function getPullRequests3(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/tikuzaa/Quiz-app-frontend/pulls",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching pull requests:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting Issues Data
+async function getIssues3(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/tikuzaa/Quiz-app-frontend/issues",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching issues:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting PR Data For Sayandip
+async function getPullRequests4(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/sayandip-ghosh/Blog-Server-Side/pulls",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching pull requests:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting Issues Data
+async function getIssues4(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/sayandip-ghosh/Blog-Server-Side/issues",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching issues:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting PR Data For Sahil
+async function getPullRequests5(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/Sahil-047/notion-clone/pulls",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching pull requests:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting Issues Data
+async function getIssues5(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/Sahil-047/notion-clone/issues",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching issues:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting PR Data For Muskaan
+async function getPullRequests6(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/muskaand26-msit/my-blog-app/pulls",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching pull requests:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+// Getting Issues Data
+async function getIssues6(access_token) {
+  try {
+      const response = await axios.get(
+          "http://localhost:5000/repos/muskaand26-msit/my-blog-app/issues",
+          {
+              headers: {
+                  'Authorization': `Bearer ${access_token}`
+              }
+          }
+      );
+      return response.data; // Return the data directly
+  } catch (error) {
+      console.error("Error fetching issues:", error);
+      throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+export { getAccessToken, getUserData, getPullRequests, getIssues, getPullRequests1, getIssues1, getPullRequests2, getIssues2, getPullRequests3, getIssues3, getPullRequests4, getIssues4, getPullRequests5, getIssues5, getPullRequests6, getIssues6 };
