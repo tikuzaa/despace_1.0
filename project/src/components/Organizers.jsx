@@ -119,7 +119,7 @@ const Organizers = () => {
         },
       },
       {
-        breakpoint: 800, // For screens up to 500px
+        breakpoint: 880, // For screens up to 500px
         settings: {
           slidesToShow: 1, // Show 1 slide
           slidesToScroll: 1,
@@ -146,18 +146,18 @@ const Organizers = () => {
             <div key={index} className="p-4">
               <div className="flex justify-center items-center flex-wrap">
                 <div className="relative w-[350px] h-[350px] m-[2.5rem] group">
-                  <div className="absolute top-0 left-0 w-full h-full z-20 transition-transform duration-500 ease-in-out transform group-hover:-translate-y-14">
+                  <div className="absolute top-0 left-0 w-full h-full z-20 transition-transform duration-500 ease-in-out transform group-hover:-translate-y-14 max-[420px]:group-hover:-translate-y-14">
                     <img
                       className="w-full h-full object-cover rounded-[1.5rem]"
                       src={organizer.image}
                       alt={organizer.name}
                     />
                   </div>
-                  <div className="bg-gray-200 rounded-[1.5rem] absolute top-0 left-0 w-full h-full p-6 flex justify-center items-end z-10 transition-transform duration-500 ease-in-out transform group-hover:translate-y-14 text-center">
-                    <h2 className="text-2xl text-gray-900 font-medium leading-8">
+                  <div className="bg-gray-200 rounded-[1.5rem] absolute top-0 left-0 w-full h-full p-6 flex justify-center items-end z-10 transition-transform duration-500 ease-in-out transform group-hover:translate-y-14 max-[478px]:group-hover:translate-y-14 text-center">
+                    <h2 className="text-2xl text-gray-900 font-medium leading-8 max-[478px]:leading-5 max-[478px]:text-xl">
                       {organizer.name}
                       <br />
-                      <span className="text-gray-600 text-lg font-light tracking-wide">
+                      <span className="text-gray-600 text-lg font-light tracking-wide max-[478px]:text-[15px] max-[478px]:leading-5">
                         {organizer.post}
                       </span>
                     </h2>
