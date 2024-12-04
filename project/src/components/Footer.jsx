@@ -36,7 +36,7 @@ const Footer = () => {
             <a href="https://hackerspace-portfolio.vercel.app/projects">
               <h2 className="text-xl mb-4 relative group text-xl hover:transition duration-300">
                 Projects
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#e8f6ff] transition-all duration-300 group-hover:w-[50px]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#e8f6ff] transition-all duration-300 group-hover:w-[78px]"></span>
               </h2>
             </a>
             <a href="https://hackerspace-portfolio.vercel.app/contact">
