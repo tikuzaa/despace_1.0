@@ -81,40 +81,41 @@ function Dashboard() {
         setUser(data);
 
         // Fetch pull requests after user data is retrieved
-        const prData = await getPullRequests(token);
-        setPullRequests(prData);
-        const issueData = await getIssues(token);
-        setIssues(issueData);
-        //bidisha
-        const prData1 = await getPullRequests1(token);
-        setPullRequests1(prData1);
-        const issueData1 = await getIssues1(token);
-        setIssues1(issueData1);
-        //ankit
-        const prData2 = await getPullRequests2(token);
-        setPullRequests2(prData2);
-        const issueData2 = await getIssues2(token);
-        setIssues2(issueData2);
         //debangan
         const prData3 = await getPullRequests3(token);
         setPullRequests3(prData3);
         const issueData3 = await getIssues3(token);
         setIssues3(issueData3);
-        //sayandip
-        const prData4 = await getPullRequests4(token);
-        setPullRequests4(prData4);
-        const issueData4 = await getIssues4(token);
-        setIssues4(issueData4);
-        //sahil
-        const prData5 = await getPullRequests5(token);
-        setPullRequests5(prData5);
-        const issueData5 = await getIssues5(token);
-        setIssues5(issueData5);
+        //bidisha
+        const prData1 = await getPullRequests1(token);
+        setPullRequests1(prData1);
+        const issueData1 = await getIssues1(token);
+        setIssues1(issueData1);
         //Muskaan
         const prData6 = await getPullRequests6(token);
         setPullRequests6(prData6);
         const issueData6 = await getIssues6(token);
         setIssues6(issueData6);
+        //sayandip
+        const prData4 = await getPullRequests4(token);
+        setPullRequests4(prData4);
+        const issueData4 = await getIssues4(token);
+        setIssues4(issueData4);
+        //sayan
+        const prData = await getPullRequests(token);
+        setPullRequests(prData);
+        const issueData = await getIssues(token);
+        setIssues(issueData);
+        //sahil
+        const prData5 = await getPullRequests5(token);
+        setPullRequests5(prData5);
+        const issueData5 = await getIssues5(token);
+        setIssues5(issueData5);
+        //ankit
+        const prData2 = await getPullRequests2(token);
+        setPullRequests2(prData2);
+        const issueData2 = await getIssues2(token);
+        setIssues2(issueData2);
       }
 
       fetchUserData();
