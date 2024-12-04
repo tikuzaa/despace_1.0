@@ -15,8 +15,6 @@ const Callback = () => {
             navigate("/dashboard"); // to /dashboard
           }, 2000);
         }
-        // console.log(token)
-        // navigate('/')
       } catch (error) {
         console.log("err: ", error);
       }
@@ -26,12 +24,9 @@ const Callback = () => {
 
   return (
     <>
-      {/* <img width={'100'} src={loader} alt="loader" />
-      <p>redirecting to homepage...</p> */}
-
       <div className="flex items-center justify-center h-screen bg-gray-100">
         <div className="flex flex-col items-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-[#72ff6c] border-solid"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-sky-500 border-solid"></div>
           <p className="mt-4 text-lg text-gray-700">Loading...</p>
         </div>
       </div>

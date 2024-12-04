@@ -37,10 +37,10 @@ export default {
         '100%': { transform: 'rotate(360deg)' },
       },
       blink: {
-        '0%, 100%': { color: '#002812', opacity: '1' },
+        '0%, 100%': { color: 'grey', opacity: '1' },
         '25%': {color: 'white', opacity:'0.25'},
         '50%': { color: 'white', opacity:'1' },
-        '75%' : {color:'#002812', opacity: '0.75'  }
+        '75%' : {color:'white', opacity: '0.75'  }
       },
       ping: {
         '0%': { transform: 'scale(0.5)', opacity: '0' },

@@ -49,36 +49,42 @@ const LandingPage = () => {
     <>
       <Navbar />
       <div
-        className="min-h-screen bg-[#004825] flex items-center justify-center px-6 relative top-[5rem]"
+        className="min-h-screen overflow-hidden bg-[#062800] flex items-center justify-center px-6 relative "
         id="home"
       >
-        <div className="text-center text-2xl font-bold text-[#004825] p-10">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src="/pfp/bgvid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-75"></div>
+        <div className="text-center z-0 text-2xl font-bold text-[#004825] p-10">
           <h1 className="text-8xl font-oxanium font-bold text-gray-300 mb-10 max-[712px]:leading-[0.5rem]">
-            {/* <span className="text-8xl font-poppins font-bold animate-ping">
-            {displayText}
-          </span> */}
             <Reveal>
               {randomWords.length < currentIndex ? (
-                <>
-                  <span className="text-8xl font-oxanium font-bold animate-ping max-[712px]:text-[2.75rem]">
+                <div className="z-5 relative top-[5rem] ">
+                  <span className="text-8xl z-5 font-oxanium font-bold animate-ping max-[712px]:text-[2.75rem]">
                     ❗
                   </span>
-                  <span className="text-8xl font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
+                  <span className="text-8xl z-5 font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
                     Registration is Live
                   </span>
-                </>
+                </div>
               ) : (
-                <span className="text-8xl font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
+                <span className="text-8xl relative top-[5rem] z-5 font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
                   {displayText}
                 </span>
               )}
             </Reveal>
           </h1>
           <Reveal>
-            <p className="text-slate-400 text-lg mb-8 font-normal font-oxanium text-wrap">
-              {/* Join us for an exhilarating open-source project competition where
-              developers, designers, and tech enthusiasts come together to
-              innovate and collaborate! <br /> */}
+            <p className="text-white relative top-[5rem] z-5 text-lg mb-8 font-normal font-oxanium text-wrap">
               <br />
               📅
               <strong className="text-2xl"> December 5th, 2024</strong> -
@@ -87,16 +93,13 @@ const LandingPage = () => {
               where developers, designers, and tech enthusiasts come together to
               innovate and collaborate! <br />
               <br />
-              {/* Don't miss this opportunity to learn, grow, and make an impact
-              through open-source contributions! <br /> */}
-              🌟 <strong className="text-2xl">Sign Up Now!</strong> 🌟
-              {/* </Reveal> */}
+              <strong className="text-2xl z-5">Sign Up Now!</strong>
             </p>
           </Reveal>
           <Reveal>
             <button
               onClick={handleLogin}
-              className="bg-[#008217] text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-[#00a05a] hover:text-black transition duration-300"
+              className="bg-[#8df0ff] bg-opacity-40 relative top-[4rem] z-5 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-[#007987] hover:text-black transition duration-300"
             >
               <FaGithub
                 className="inline-block mr-2 relative bottom-1 left-2"
@@ -107,7 +110,9 @@ const LandingPage = () => {
           </Reveal>
         </div>
       </div>
-      <About />
+      <div id="about">
+        <About />
+      </div>
       <div id="prizes">
         <Prizes />
       </div>

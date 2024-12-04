@@ -17,8 +17,6 @@ const UserDashboard = ({
   issues4,
   pullRequests5,
   issues5,
-  pullRequests6,
-  issues6,
   handleLogout,
 }) => {
   return (
@@ -44,8 +42,8 @@ const UserDashboard = ({
         {/* Debangan */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests3}
-          issues={issues3}
+          pullRequests={pullRequests}
+          issues={issues}
         />
         {/* Bidisha */}
         <RepoSection
@@ -56,20 +54,20 @@ const UserDashboard = ({
         {/* Muskaan */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests6}
-          issues={issues6}
+          pullRequests={pullRequests2}
+          issues={issues2}
         />
         {/* Sayandip */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests4}
-          issues={issues4}
+          pullRequests={pullRequests3}
+          issues={issues3}
         />
         {/* Sayan */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests}
-          issues={issues}
+          pullRequests={pullRequests4}
+          issues={issues4}
         />
         {/* Sahil */}
         <RepoSection
@@ -78,11 +76,11 @@ const UserDashboard = ({
           issues={issues5}
         />
         {/* Ankit */}
-        <RepoSection
+        {/* <RepoSection
           userData={userData}
           pullRequests={pullRequests2}
           issues={issues2}
-        />
+        /> */}
       </div>
     </div>
   );
