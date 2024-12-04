@@ -41,11 +41,11 @@ const UserDashboard = ({
         </div>
 
         {/* Repository Section */}
-        {/* Sayan */}
+        {/* Debangan */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests}
-          issues={issues}
+          pullRequests={pullRequests3}
+          issues={issues3}
         />
         {/* Bidisha */}
         <RepoSection
@@ -53,17 +53,11 @@ const UserDashboard = ({
           pullRequests={pullRequests1}
           issues={issues1}
         />
-        {/* Ankit */}
+        {/* Muskaan */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests2}
-          issues={issues2}
-        />
-        {/* Debangan */}
-        <RepoSection
-          userData={userData}
-          pullRequests={pullRequests3}
-          issues={issues3}
+          pullRequests={pullRequests6}
+          issues={issues6}
         />
         {/* Sayandip */}
         <RepoSection
@@ -71,17 +65,23 @@ const UserDashboard = ({
           pullRequests={pullRequests4}
           issues={issues4}
         />
+        {/* Sayan */}
+        <RepoSection
+          userData={userData}
+          pullRequests={pullRequests}
+          issues={issues}
+        />
         {/* Sahil */}
         <RepoSection
           userData={userData}
           pullRequests={pullRequests5}
           issues={issues5}
         />
-        {/* Muskaan */}
+        {/* Ankit */}
         <RepoSection
           userData={userData}
-          pullRequests={pullRequests6}
-          issues={issues6}
+          pullRequests={pullRequests2}
+          issues={issues2}
         />
       </div>
     </div>
