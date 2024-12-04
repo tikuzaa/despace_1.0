@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-row space-x-10 justify-center mt-10 max-[595px]:space-x-0 max-[1160px]:flex-col">
           <div className="flex justify-center max-[1160px]:relative max-[1160px]:bottom-[40px]">
             <img
-              src="../src/pfp/Hackerspace logo.png"
+              src="/pfp/Hackerspace logo.png"
               alt="prologo"
               className="w-[180px] h-[180px]"
             />

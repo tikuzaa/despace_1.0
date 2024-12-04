@@ -7,55 +7,55 @@ import { Reveal } from "./Reveal";
 const organizersData = [
   {
     name: "Muskaan Das",
-    image: "../src/pfp/muskaan.jpg",
+    image: "/pfp/muskaan.jpg",
   },
   {
     name: "Shekhar Hans",
-    image: "../src/pfp/shekhar.jpg",
+    image: "/pfp/shekhar.jpg",
   },
   {
     name: "Aniruddha Ghosh",
-    image: "../src/pfp/aniruddha.jpg",
+    image: "/pfp/aniruddha.jpg",
   },
   {
     name: "Arnab Manna",
-    image: "../src/pfp/arnab.jpg",
+    image: "/pfp/arnab.jpg",
   },
   {
     name: "Bidisha Banik",
-    image: "../src/pfp/bidisha.jpg",
+    image: "/pfp/bidisha.jpg",
   },
   {
     name: "Debangan Dey",
-    image: "../src/pfp/debangan.jpg",
+    image: "/pfp/debangan.jpg",
   },
   {
     name: "Sayandip Ghosh",
-    image: "../src/pfp/sayandip.jpg",
+    image: "/pfp/sayandip.jpg",
   },
   {
     name: "Sahil Golder",
-    image: "../src/pfp/sahil.jpg",
+    image: "/pfp/sahil.jpg",
   },
   {
     name: "Somshirsha Bhattacharya",
-    image: "../src/pfp/somshirsha.jpg",
+    image: "/pfp/somshirsha.jpg",
   },
   {
     name: "Ankit Kundu",
-    image: "../src/pfp/ankit.jpg",
+    image: "/pfp/ankit.jpg",
   },
   {
     name: "Aahana Malakar",
-    image: "../src/pfp/aahana.jpg",
+    image: "/pfp/aahana.jpg",
   },
   {
     name: "Sagarika Bandyopadhyay",
-    image: "../src/pfp/sagarika.jpg",
+    image: "/pfp/sagarika.jpg",
   },
   {
     name: "Sayan Sanpui",
-    image: "../src/pfp/sayan.jpg",
+    image: "/pfp/sayan.jpg",
   },
 ];
 
