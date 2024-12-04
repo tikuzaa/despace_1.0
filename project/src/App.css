@@ -1,20 +1,7 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
 ::selection {
-  background-color: #72ff6c;
+  background-color: #00fafb;
   color: rgb(0, 0, 0); 
 }
-
-/* For WebKit browsers (Safari, Chrome) */
-/* ::-moz-selection {
-  background-color: #72ff6c; 
-  color: rgb(0, 0, 0); 
-} */
 
 .custom-dots .slick-dots {
   @apply relative mt-4; /* Make dots relative and add margin-top */
@@ -26,5 +13,5 @@
 }
 
 .custom-dots .slick-dots li.slick-active button:before {
-  @apply text-[#004908]; /* Highlight active dot */
+  @apply text-[#00404f]; /* Highlight active dot */
 }
